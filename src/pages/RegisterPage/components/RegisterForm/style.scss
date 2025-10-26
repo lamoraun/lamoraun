@@ -69,4 +69,8 @@
       }
     }
   }
+
+  .ant-form-item:has(textarea) .ant-form-item-additional {
+    margin-top: 1rem;
+  }
 }
