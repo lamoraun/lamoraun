@@ -1,0 +1,72 @@
+﻿// src/components/RegisterForm/style.scss
+.register-form-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+
+  .ant-form-item-label > label {
+    font-weight: 600;
+  }
+
+  .ant-slider {
+    margin-top: 8px;
+  }
+
+  .submit-button {
+    margin-top: 24px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .markdown-preview {
+    margin-top: 24px;
+    padding: 16px;
+    border-radius: 6px;
+
+    h4 {
+      margin-top: 0;
+    }
+
+    .preview-content {
+      line-height: 1.6;
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-top: 16px;
+        margin-bottom: 12px;
+      }
+
+      p,
+      li {
+        margin-bottom: 8px;
+      }
+
+      blockquote {
+        border-left: 4px solid #945900;
+        padding-left: 16px;
+        margin: 12px 0;
+      }
+
+      ul,
+      ol {
+        padding-left: 24px;
+      }
+
+      code {
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+      }
+
+      pre {
+        padding: 12px;
+        border-radius: 6px;
+        overflow-x: auto;
+      }
+    }
+  }
+}

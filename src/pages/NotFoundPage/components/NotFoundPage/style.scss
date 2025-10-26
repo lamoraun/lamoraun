@@ -1,1 +1,44 @@
-﻿
+﻿.not-found-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 64px);
+  background: #1b160f;
+  padding: 24px;
+
+  .ant-result {
+    max-width: 600px;
+    text-align: center;
+
+    .not-found-title {
+      font-family: "Cinzel", serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #ff9800;
+      text-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
+      letter-spacing: 1px;
+    }
+
+    .not-found-subtitle {
+      color: #d4c8a8;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-top: 16px;
+    }
+
+    .not-found-button {
+      height: 48px;
+      font-size: 18px;
+      background: #945900;
+      border-color: #945900;
+      box-shadow: 0 4px 12px rgba(148, 89, 0, 0.3);
+
+      &:hover,
+      &:focus {
+        background: #ff9800;
+        border-color: #ff9800;
+        color: #1b160f;
+      }
+    }
+  }
+}

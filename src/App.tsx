@@ -1,17 +1,27 @@
-import { Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import NotFoundPage from './pages/NotFoundPage';
+import { Routes, Route } from "react-router-dom";
+import { ConfigProvider, Layout } from "antd";
+import theme from "./theme";
+import HomePage from "./pages/HomePage";
+import NotFoundPage from "./pages/NotFoundPage";
+import RegisterPage from "./pages/RegisterPage";
+import Navbar from "./modules/Navbar";
+import { Content } from "antd/es/layout/layout";
 
 function App() {
-    return (
-        <Routes>
+  return (
+    <ConfigProvider theme={theme}>
+      <Layout>
+        <Navbar />
+        <Content>
+          <Routes>
             <Route path="/" element={<HomePage />} />
-            {/* ƒругие маршруты можно добавл€ть здесь */}
-
-            {/* ќбработчик 404 Ч должен быть последним */}
+            <Route path="/register" element={<RegisterPage />} />
             <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-    );
+          </Routes>
+        </Content>
+      </Layout>
+    </ConfigProvider>
+  );
 }
 
 export default App;
