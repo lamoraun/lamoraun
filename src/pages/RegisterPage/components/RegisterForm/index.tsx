@@ -150,7 +150,7 @@ const RegisterForm: React.FC = () => {
           <Form.Item
             label={`Сколько дней в неделю вы готовы участвовать в игре? (${
               formData.daysPerWeek || 3
-            }) *`}
+            })`}
             name="daysPerWeek"
             rules={[{ required: true }]}
           >
