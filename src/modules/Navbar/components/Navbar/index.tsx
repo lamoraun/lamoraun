@@ -9,6 +9,16 @@ const { Header: AntHeader } = Layout;
 const navItems = [
   { label: "Главная", key: "/", to: "/" },
   { label: "Регистрация", key: "/register", to: "/register" },
+  {
+    label: "Вики",
+    key: "https://lamoraun.fandom.com/ru/",
+    to: "https://lamoraun.fandom.com/ru/",
+  },
+  {
+    label: "Discord",
+    key: "https://discord.gg/2ybNMdS",
+    to: "https://discord.gg/2ybNMdS",
+  },
 ];
 
 const Header: React.FC = () => {
